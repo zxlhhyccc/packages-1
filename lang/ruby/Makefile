@@ -180,7 +180,7 @@ $(call Package/ruby/Default)
 endef
 define Package/libruby/install
 	$(INSTALL_DIR) $(1)/usr/lib
-	$(CP) $(PKG_INSTALL_DIR)/usr/lib/libruby.so.* $(1)/usr/lib/
+	$(CP) $(PKG_INSTALL_DIR)/usr/lib/libruby.so* $(1)/usr/lib/
 endef
 
 define Package/ruby-dev
